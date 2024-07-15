@@ -1,0 +1,39 @@
+// The extend relationship of the TypeScript Config JSON
+// base -> node + web
+// node -> vite
+// web -> vitest + play
+
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.web.json" },
+    { "path": "./tsconfig.play.json" },
+    { "path": "./tsconfig.node.json" },
+    { "path": "./tsconfig.vite-config.json" },
+    { "path": "./tsconfig.vitest.json" }
+  ]
+}
+
+// target: 指定编译后的 JavaScript 目标版本，例如 ES5、ES6（ES2015）、ESNext 等。根据目标环境和兼容性需求选择合适的版本。
+
+// module: 指定生成的模块格式，可以是 CommonJS、ES6、AMD、UMD 等。根据项目所使用的模块系统选择适当的格式。
+
+// strict: 启用所有严格类型检查选项，包括strictNullChecks、strictFunctionTypes 等。建议在新项目中开启，以获得更强的类型检查和更安全的代码。
+
+// esModuleInterop: 启用此选项可以简化导入具有默认导出的模块时的编译后代码。在使用第三方模块时可能需要设置为 true。
+
+// outDir: 指定编译后的 JavaScript 文件输出目录。
+
+// baseUrl 和 paths: 用于配置模块解析的基本路径和路径映射，方便使用别名导入模块。
+
+// sourceMap: 是否生成源映射文件，便于在调试时将编译后的 JavaScript 代码映射回原始 TypeScript 代码。
+
+// resolveJsonModule: 启用后可以直接导入 JSON 文件作为模块，方便配置和数据管理。
+
+// declaration 和 declarationDir: 生成声明文件（.d.ts）以提供给其他 TypeScript 项目使用，增强模块的类型安全性。
+
+// jsx: 配置 JSX 的转换方式，例如 preserve、react、react-native 等，根据项目使用的框架选择适当的设置。
+
+// exclude 和 include: 配置要排除或包含在编译中的文件或目录。
+
+// noEmit: 设置为 true 时，不生成输出文件，适用于纯类型检查的场景。

@@ -1,0 +1,4 @@
+//用于 Web 项目的 TypeScript 配置文件，定义了适合在 Web 浏览器环境中运行的编译选项和文件列表。
+{
+    "extends":"./tsconfig.base.json"
+}

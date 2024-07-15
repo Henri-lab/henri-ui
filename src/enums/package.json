@@ -1,0 +1,6 @@
+{
+  "name": "@henri-ui/enums",
+  "private": true,
+  "license": "MIT",
+  "main": "index.ts"
+}

@@ -1,0 +1,4 @@
+//用于 Vite 构建工具的 TypeScript 配置文件，配置了与 Vite 相关的特定选项。
+{
+    "extends":"./tsconfig.node.json"
+}

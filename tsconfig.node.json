@@ -1,0 +1,4 @@
+// 用于 Node.js 项目的 TypeScript 配置文件，配置了适合在 Node.js 环境中运行的编译选项和文件列表。
+{
+    "extends":"./tsconfig.base.json"
+}

@@ -1,0 +1,4 @@
+// 用于测试相关的 TypeScript 配置文件，配置了适合测试运行的编译选项和文件列表。
+{
+    "extends":"./tsconfig.web.json"
+}
