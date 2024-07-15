@@ -16,5 +16,10 @@
   "include": [
     "src/**/*" /* 需要编译的 TypeScript 文件的目录 为 src文件夹下所有文件*/
   ],
-  "exclude": ["node_modules" /* 不包括编译的目录或文件 */]
+  "exclude": ["node_modules" /* 不包括编译的目录或文件 */],
+
+  "moduleResolution": "nodenext", //ES6 模块解析
+  "paths": {
+    "@vueuse/core": ["node_modules/@vueuse/core"] //ts编译器查找时会找到对应的映射地址
+  }
 }
